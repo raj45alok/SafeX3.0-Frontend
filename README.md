@@ -5,18 +5,18 @@ This is the **frontend** part of the application, developed using **React** and 
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔐 User Registration & Login
-- 📸 Facial Recognition via Camera or S3
-- 📧 OTP-based Email Verification
-- 🧠 React Hooks + Context API for state management
-- 💅 Styled with modern CSS and component-based layout
-- 🌐 Connects to a Node.js/Express backend (SafeX-Backend)
+-  User Registration & Login
+-  Facial Recognition via Camera or S3
+-  OTP-based Email Verification
+-  React Hooks + Context API for state management
+-  Styled with modern CSS and component-based layout
+-  Connects to a Node.js/Express backend (SafeX-Backend)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **React**
 - **Vite**
@@ -27,7 +27,7 @@ This is the **frontend** part of the application, developed using **React** and 
 
 ---
 
-## 📦 Installation
+##  Installation
 
 Clone the repository:
 
