@@ -1,0 +1,206 @@
+/* Updated Theme & Layout for Facial Recognition Page */
+
+.facial-recognition-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #e0f2fe, #e9d5ff); /* Matching Register Gradient */
+  color: #1f2937; /* Darker neutral for better readability */
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 30px;
+}
+
+/* Top Bar */
+.top-bar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(31, 41, 55, 0.2);
+}
+
+/* User Info */
+.user-info {
+  font-size: 1rem;
+  color: #2563eb; /* Tailwind Blue-600 */
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Side-by-side layout */
+.video-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Shared size for webcam & image */
+.video-container,
+.image-preview img {
+  width: 320px;
+  height: 240px;
+  border-radius: 12px;
+  border: 2px solid #3b82f6;
+  background-color: #f3f4f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+  object-fit: cover;
+}
+
+/* Webcam container */
+.video-container {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Captured image preview */
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.button-group button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button-group button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* File input styling */
+.button-group input[type="file"] {
+  color: #111827;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* Result Message */
+.result-message {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #111827;
+  background-color: #dbeafe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .video-image-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video-container,
+  .image-preview img {
+    width: 90%;
+    height: auto;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+/* --- DIMENSIONS INCREASED BY 25% --- */
+.video-container,
+.image-preview img {
+  width: 450px;
+  height: 350px;
+  border-radius: 12px;
+  border: 2px solid #3b82f6;
+  background-color: #f3f4f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+  object-fit: cover;
+}
+
+/* --- INSTRUCTIONAL NOTE --- */
+.capture-note {
+  max-width: 600px;
+  background-color: #fef9c3; /* light yellow background */
+  color: #92400e; /* warm dark orange for text */
+  border-left: 5px solid #facc15;
+  padding: 15px 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for larger webcam/image */
+@media (max-width: 768px) {
+  .video-container,
+  .image-preview img {
+    width: 95%;
+    height: auto;
+  }
+
+  .capture-note {
+    width: 100%;
+  }
+}
+.button-group input[type="file"] {
+  display: none;
+}
+

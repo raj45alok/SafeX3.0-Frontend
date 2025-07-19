@@ -1,0 +1,135 @@
+/* Full-screen gradient background */
+.otp-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom right, #fefcea, #f1daff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* OTP Card Styling */
+.otp-card {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading & Subtext */
+.otp-card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f7c400;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* OTP Input */
+.otp-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  margin-bottom: 1.5rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Captcha display row */
+.captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.captcha-box {
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  user-select: none;
+  letter-spacing: 3px;
+}
+
+.refresh-captcha {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Captcha input */
+.captcha-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Verify Button */
+.verify-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.verify-button:disabled {
+  background-color: #007bff;
+  cursor: not-allowed;
+}
+
+/* OTP resend area */
+.otp-resend {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.resend-link {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.resend-link:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}

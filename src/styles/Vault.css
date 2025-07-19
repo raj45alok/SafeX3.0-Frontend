@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(to right, #d1dce9, #e4d7fb);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.vault-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.vault-card {
+  background-color: white;
+  padding: 50px;
+  max-width: 1248px;  /* 30% larger */
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.vault-card:hover {
+  transform: scale(1.01);
+}
+
+.vault-card h1 {
+  font-size: 2.5rem;
+  color: #2957f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.vault-card p#session-timer {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.upload-label {
+  background-color: #7e33e0;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #6b28c1;
+}
+
+#fileInput {
+  display: none;
+}
+
+.file-list {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.file-item {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.file-name {
+  flex: 1;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  font-size: 0.85rem;
+  color: #666;
+  margin-right: 20px;
+}
+
+.access-btn,
+.delete-btn {
+  background-color: #00c853;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.access-btn:hover {
+  background-color: #00b248;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+#logoutBtn {
+  margin-top: 30px;
+  background: linear-gradient(to right, #e05252, #e33636);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+#logoutBtn:hover {
+  background: linear-gradient(to right, #c53d3d, #b02b2b);
+}
+
+.drag-drop-hint {
+  font-style: italic;
+  color: #777;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .vault-card {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+}
